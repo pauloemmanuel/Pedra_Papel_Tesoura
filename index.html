@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+<h1 style="text-align: center;">Selecione uma opção</h1>
+    <div id="page">
+    
+    <div class="container">
+        <div class="imagens">
+            <div class="imagem" onclick="resultado(0)"><img src="assets/img/pedra.png"/><p>Pedra</p></div>
+            <div class="imagem" onclick="resultado(1)"><img src="assets/img/papel.png"/><p>Papel</p></div>
+            <div class="imagem" onclick="resultado(2)"><img src="assets/img/tesoura.png"/><p>Tesoura</p></div>
+        </div>
+    </div>
+
+    <div class="divisao">
+        <img src="assets/img/versus.png">
+        <p id="resultado"></p>
+    </div> 
+
+    <div class="container">
+        <div class="imagens">
+            <div class="imagem" id="pedra"><img src="assets/img/pedra.png"/><p>Pedra</p></div>
+            <div class="imagem" id="papel"><img src="assets/img/papel.png"/><p>Papel</p></div>
+            <div class="imagem" id="tesoura"><img src="assets/img/tesoura.png"/><p>Tesoura</p></div>
+        </div>
+    </div>
+
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
