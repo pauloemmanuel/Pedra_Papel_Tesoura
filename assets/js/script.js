@@ -8,8 +8,9 @@ function resultado(opcao){
 
 
   var i = 0;
- const intervalo = setInterval( () =>{
-  
+ const intervalo = setTimeout( () =>{
+
+    while(i<=3){
     document.getElementById("pedra").classList.add('azul');
     setTimeout(() => { 
           document.getElementById("pedra").classList.remove('azul');
@@ -61,7 +62,8 @@ function resultado(opcao){
       
     }
     i++; 
-}, 1000);
+}
+}, 2000);
 
 
     
@@ -73,7 +75,7 @@ function empate(){
 
   
     document.getElementById('resultado').style.display = 'block';
-     document.getElementById(escolhaBot).classList.add('azul');
+    
      document.getElementById('resultado').innerHTML = " Empate!";
 }
 
@@ -81,14 +83,14 @@ function playerganha(){
 
    
     document.getElementById('resultado').style.display = 'block';
-    document.getElementById(escolhaBot).classList.add('azul');
+   
     document.getElementById('resultado').innerHTML = " Você Ganhou!";
 }
 function botganha(){
 
   
     document.getElementById('resultado').style.display = 'block';
-    document.getElementById(escolhaBot).classList.add('azul');
+ 
     document.getElementById('resultado').innerHTML = " Você Perdeu!";
 
 }
